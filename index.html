@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交大校园码</title>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <div class="container">
+        <div class="info-container">
+            <img src="static/icon.jpeg" alt="" id="user-icon">
+            <div id="user-info">
+                <p id="user-id"></p>
+                <p id="user-class"></p>
+            </div>
+        </div>
+
+        <div class="body-container">
+            <div id="time-info">
+                <p>当前时间：</p>
+                <strong><span id="date"></span></strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                <strong><span id="time"></span></strong>
+                <p>已于 <span id="reTime"></span> 完成报道登记</p>
+                <p id="off-campus">外出时间 <span id="off-campus-start">2020-05-23 00:00</span> 至 <span id="off-campus-end">2020-05-23 00:00</span></p>
+            </div>
+
+            <div id="qr-container">
+                <div id="group-container">
+                    <p class="user-group"></p>
+                </div>
+                <div id="qr-code"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div id="selected"><img src="static/note-green.png" alt=""><p>交大校园码</p> </div>
+            <div><img src="static/note.png" alt=""><p>返校申请</p> </div>
+            <div><img src="static/note.png" alt=""><p>外出申请</p> </div>
+            <div><img src="static/note.png" alt=""><p>转码申请</p> </div>
+        </div>
+    </div>
+</body>
+<script src="js/qrcode.js"></script>
+<script src="js/script.js"></script>
+</html>
